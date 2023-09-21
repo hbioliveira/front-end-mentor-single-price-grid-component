@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    /* ---------- Primary ---------- */
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyan-lighter: #4ABEBD;
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    
+    /* ---------- Neutral ---------- */
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Karla', sans-serif;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: var(--Light-Gray);
+}
+
+.container {
+    width: 55vw;
+    height: 55vh;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 40px 40px 40px 1px rgb(198, 217, 235);
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 45%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+header h1 {
+    color:  var(--Cyan-lighter);
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    
+}
+
+header h3 {
+    color: var(--Bright-Yellow);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+header p {
+    line-height: 1.7rem;
+    color: var(--Grayish-Blue);
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 55%;
+    
+}
+
+.dark {
+    background-color: var(--Cyan);
+    color: white;
+    width: 50%;
+    padding: 2.5rem;
+}
+
+.dark h3, .light h3{
+    font-size: 1.2rem;
+}
+
+.dark .price-tag {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    
+}
+
+.dark .price-tag span{
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.light {
+    background-color: var(--Cyan-lighter);
+    color: white;
+    width: 50%;
+    padding: 2.5rem;
+}
+
+.light ul {
+    margin-top: 1rem;
+}
+
+.light ul li {
+    line-height: 1.4rem;
+    opacity: 70%;
+}
+
+button {
+    background-color: var(--Bright-Yellow);
+    border: none;
+    border-radius: .5rem;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 10px 10px 60px 1px rgb(110, 143, 140);
+    margin: 2rem auto;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
