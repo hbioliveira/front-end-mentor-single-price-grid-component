@@ -33,7 +33,7 @@ body {
 .container {
     width: 672px;
     height: 500px;
-    border-radius: 1rem;
+    border-radius: .8rem;
     overflow: hidden;
     box-shadow: 40px 40px 40px 1px rgb(198, 217, 235);
 }
